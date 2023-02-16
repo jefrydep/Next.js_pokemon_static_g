@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { FC, PropsWithChildren, use } from "react";
 import NavBar from "../ui/NavBar";
-import { useRouter } from "next/router";
 interface Props {
   title?: string;
 }
@@ -11,8 +10,8 @@ interface Props {
 const origin = (typeof window === 'undefined'?'':window.location.origin)
 
 const Layout = ({ children, title }: PropsWithChildren<Props>) => {
-  console.log({origin
-  })
+  // console.log({origin
+  // })
 
   
   return (
